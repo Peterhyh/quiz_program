@@ -1,14 +1,21 @@
-class Question:
-    def __init__ (self, name ):
+class User:
+    def __init__(self, name):
         self.name = name
-        self.score = 0
+        self.followers = 0
+        self.following = 0
+    
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
 
 
-player_one = Question('peter')
+user1 = User('Peter')
+user2 = User('Trinh')
 
-if player_one.name == 'Peter':
-    player_one.score += 10
-else:
-    player_one.score -= 10
+print(user1.name, user1.followers, user1.following)
+print(user2.name, user2.followers, user2.following)
 
-print(player_one.name, player_one.score)
+user1.follow(user2)
+
+print(user1.name, user1.followers, user1.following)
+print(user2.name, user2.followers, user2.following)

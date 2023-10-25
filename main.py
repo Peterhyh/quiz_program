@@ -4,6 +4,11 @@ class Question:
         self.score = 0
 
 
-player_one = Question('Peter')
+player_one = Question('peter')
 
-print (player_one.name)
+if player_one.name == 'Peter':
+    player_one.score += 10
+else:
+    player_one.score -= 10
+
+print(player_one.name, player_one.score)

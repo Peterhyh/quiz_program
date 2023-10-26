@@ -11,7 +11,7 @@ class QuizLogic:
     def next_question(self):
         current_question = self.question_list[self.question_number]
         self.question_number += 1
-        user_answer = input(f'Q.{self.question_number}: {current_question.text}. (True/False)?: ')
+        user_answer = input(f'Q.{self.question_number}: {current_question.text} ')
         if user_answer == current_question.answer:
             print('You got it right!')
             self.number_of_correct_answers += 1

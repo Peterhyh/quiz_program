@@ -17,4 +17,4 @@ class QuizLogic:
             self.number_of_correct_answers += 1
         else:
             print('Wrong')
-        print(f'The correct answer was: {current_question.answer}')
+        print(f'The correct answer was: {current_question.answer}\n\n')

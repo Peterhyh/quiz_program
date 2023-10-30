@@ -17,6 +17,4 @@ question_data = [
 
     {"text":"A repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times","answer":"for loop"},
     {"text":"A repetition that executes once before the Boolean is tested","answer":"do while loop"},
-    
-
 ]
